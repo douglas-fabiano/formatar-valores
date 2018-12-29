@@ -1,0 +1,30 @@
+{
+  "name": "formatar-valores",
+  "version": "0.0.1",
+  "description": "Helper para formatação de CPF/CNPJ, CEP e Valor monetário para JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglas-fabiano/formatar-valores.git"
+  },
+  "keywords": [
+    "formatar",
+    "cpf",
+    "cnpj",
+    "cep",
+    "moeda",
+    "formatar-cpf",
+    "formatar-cnpj",
+    "formatar-cep",
+    "formatar-moeda"
+  ],
+  "author": "Douglas Fabiano Batista <douglas.fabianob@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douglas-fabiano/formatar-valores/issues"
+  },
+  "homepage": "https://github.com/douglas-fabiano/formatar-valores#readme"
+}
