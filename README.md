@@ -21,7 +21,7 @@ yarn add formatar-valores
 
 ### Importação do Pacote
 ```javascript
-import formatar from 'formatar-valores
+import formatar from 'formatar-valores'
 ```
 
 ### Formatando CPF
