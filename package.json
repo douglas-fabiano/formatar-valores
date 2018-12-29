@@ -1,6 +1,6 @@
 {
   "name": "formatar-valores",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helper para formatação de CPF/CNPJ, CEP e Valor monetário para JavaScript",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,7 @@
 
-# Helper para Formatação de Valores
 
+
+# Helper para Formatação de Valores
 
 ![Release](https://img.shields.io/npm/v/formatar-valores.svg?style=flat-square&label=release)
 
@@ -9,7 +10,6 @@
 ## Uso
 
 Faça o download com [NPM](https://www.npmjs.com).
-
 ```
 npm i formatar-valores
 ```
@@ -24,24 +24,21 @@ yarn add formatar-valores
 import formatar from 'formatar-valores'
 ```
 
-### Formatando CPF
+### Formatando CPF/CNPJ
 
-Para formatar basta chamar a função `cpf()` e passar o valor como parâmetro, veja um exemplo:
+Para formatar basta chamar a função `cpfCnpj()` e passar o valor como parâmetro, veja um exemplo:
 
 ```javascript
-let valor = 00000000000
+let cpf = 00000000000
 
-formatar.cpf(valor)
+formatar.cpfCnpj(cpf)
 // 000.000.000-00
-```
-### Formatando CNPJ
 
-Para formatar basta chamar a função `cnpj()` e passar o valor como parâmetro, veja um exemplo:
+---------------------
 
-```javascript
-let valor = 00000000000000
+let cnpj = 00000000000000
 
-formatar.cnpj(valor)
+formatar.cpfCnpj(cnpj)
 // 00.000.000/0000-00
 ```
 ### Formatando CEP
@@ -54,6 +51,7 @@ let valor = 00000000
 formatar.cep(valor)
 // 00.000-000
 ```
+
 ### Formatando Moeda
 
 Para formatar basta chamar a função `moeda()` e passar o valor e quantidade de casas decimais como parâmetro, veja um exemplo:
@@ -63,7 +61,9 @@ let valor = 5649.8923
 
 formatar.moeda(valor, 2)
 // 5.649,89
+
 ------------------------
+
 formatar.moeda(valor, 3)
 // 5.649,892
 ```
