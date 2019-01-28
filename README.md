@@ -5,7 +5,7 @@
 
 ![Release](https://img.shields.io/npm/v/formatar-valores.svg?style=flat-square&label=release)
 
-> Biblioteca JS open-source para formatação de CPF/CNPJ, CEP e Moeda PT-BR.
+> Helper JS open-source para formatação de CPF/CNPJ, CEP e Moeda PT-BR.
 
 ## Uso
 
@@ -66,4 +66,23 @@ formatar.moeda(valor, 2)
 
 formatar.moeda(valor, 3)
 // 5.649,892
+```
+
+### Remover formatação
+
+Para remover basta chamar a função `remover()` e passar o tipo de valor como parâmetro e o valor, veja um exemplo:
+
+```javascript
+let cpfCnpj = 000.000.000-00
+let cep = 00.000-000
+let moeda = 1.000,00
+
+formatar.remover('cpfCnpj', cpfCnpj)
+// 00000000000
+
+formatar.remover('cep', cep)
+// 00000000
+
+formatar.remover('moeda', moeda)
+// 1000.00
 ```
