@@ -73,9 +73,9 @@ formatar.moeda(valor, 3)
 Para remover basta chamar a função `remover()` e passar o tipo de valor como parâmetro e o valor, veja um exemplo:
 
 ```javascript
-let cpfCnpj = 000.000.000-00
-let cep = 00.000-000
-let moeda = 1.000,00
+let cpfCnpj = '000.000.000-00'
+let cep = '00.000-000'
+let moeda = '1.000,00'
 
 formatar.remover('cpfCnpj', cpfCnpj)
 // 00000000000
