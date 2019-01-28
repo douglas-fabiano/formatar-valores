@@ -1,27 +1,38 @@
-module.exports = {
-  cpfCnpj (cpfCnpj) {
-    if (cpfCnpj !== null && cpfCnpj !== undefined && cpfCnpj.length > 0) {
-      if (cpfCnpj.length === 11) {
-        return cpfCnpj.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4')
-      } else if (cpfCnpj.length === 14) {
-        return cpfCnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5')
+export default {
+  cpfCnpj (valor) {
+    if (valor !== null && valor !== undefined && valor.length > 0) {
+      if (valor.length === 11) {
+        return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4')
+      } else if (valor.length === 14) {
+        return valor.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5')
       }
     } else {
-      return cpfCnpj
+      return valor
     }
   },
-  cep (cep) {
-    if (cep !== null && cep !== undefined && cep.length > 0) {
-      return cep.replace(/(\d{2})(\d{3})(\d{3})/, '$1.$2-$3')
+  cep (valor) {
+    if (valor !== null && valor !== undefined && valor.length > 0) {
+      return valor.replace(/(\d{2})(\d{3})(\d{3})/, '$1.$2-$3')
     } else {
-      return cep
+      return valor
     }
   },
-  moeda (moeda, casasDecimais) {
-    if (moeda !== null && moeda !== undefined) {
-      return moeda.toLocaleString('pt-BR', { minimumFractionDigits: casasDecimais })
+  moeda (valor, parametro) {
+    if (valor !== null && valor !== undefined) {
+      return valor.toLocaleString('pt-BR', { minimumFractionDigits: parametro })
     } else {
-      return moeda
+      return valor
+    }
+  },
+  remover (parametro, valor) {
+    if (parametro === 'cpfCnpj') {
+      return valor.replace(/[.]/g, '').replace('/', '').replace('-', '')
+    } else if (parametro === 'cep') {
+      return valor.replace('.', '').replace('-', '')
+    } else if (parametro === 'moeda') {
+      return valor.replace(/[.]/g, '').replace(',', '.').trim()
+    } else {
+      return valor
     }
   }
 }
