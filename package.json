@@ -4,7 +4,7 @@
   "description": "Helper para formatação de CPF/CNPJ, CEP, Telefone e Valor monetário para JavaScript",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./",
+    "lint": "eslint --ext .js ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
