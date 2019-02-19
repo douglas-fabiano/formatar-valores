@@ -4,6 +4,7 @@
   "description": "Helper para formatação de CPF/CNPJ, CEP, Telefone e Valor monetário para JavaScript",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,5 +29,13 @@
   "bugs": {
     "url": "https://github.com/douglas-fabiano/formatar-valores/issues"
   },
-  "homepage": "https://github.com/douglas-fabiano/formatar-valores#readme"
+  "homepage": "https://github.com/douglas-fabiano/formatar-valores#readme",
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
 }
