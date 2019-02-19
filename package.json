@@ -1,7 +1,7 @@
 {
   "name": "formatar-valores",
   "version": "0.0.5",
-  "description": "Helper para formatação de CPF/CNPJ, CEP e Valor monetário para JavaScript",
+  "description": "Helper para formatação de CPF/CNPJ, CEP, Telefone e Valor monetário para JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,10 +16,12 @@
     "cnpj",
     "cep",
     "moeda",
+    "telefone",
     "formatar-cpf",
     "formatar-cnpj",
     "formatar-cep",
-    "formatar-moeda"
+    "formatar-moeda",
+    "formatar-telefone"
   ],
   "author": "Douglas Fabiano Batista <douglas.fabianob@gmail.com>",
   "license": "ISC",
