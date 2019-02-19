@@ -1,6 +1,3 @@
-
-
-
 # Helper para Formatação de Valores
 
 ![Release](https://img.shields.io/npm/v/formatar-valores.svg?style=flat-square&label=release)
@@ -68,6 +65,15 @@ formatar.moeda(valor, 3)
 // 5.649,892
 ```
 
+### Formatando Telefone
+Para formatar basta chamar a função `telefone()` e passar o valor como parâmetro, veja um exemplo:
+
+```javascript
+let valor = 000000000
+formatar.telefone(valor)
+// 00000-0000
+```
+
 ### Remover formatação
 
 Para remover basta chamar a função `remover()` e passar o tipo de valor como parâmetro e o valor, veja um exemplo:
@@ -76,6 +82,7 @@ Para remover basta chamar a função `remover()` e passar o tipo de valor como p
 let cpfCnpj = '000.000.000-00'
 let cep = '00.000-000'
 let moeda = '1.000,00'
+let telefone = '00000-0000'
 
 formatar.remover('cpfCnpj', cpfCnpj)
 // 00000000000
@@ -85,4 +92,7 @@ formatar.remover('cep', cep)
 
 formatar.remover('moeda', moeda)
 // 1000.00
+
+formatar.telefone('telefone', telefone)
+// 000000000
 ```
